@@ -150,6 +150,12 @@
   .tab:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 
   /* ============ PANELS / CARDS ============ */
+  /* Devanagari rendering for the Hindi chamber */
+  .hindi { font-family: "Noto Sans Devanagari", "Nirmala UI", "Mangal", "Kohinoor Devanagari", var(--font-body); }
+  .hindi h2.section, .hindi h3.sub, .hindi .r-title, .hindi .mantra {
+    font-family: "Noto Serif Devanagari", "Nirmala UI", var(--font-display);
+  }
+  .tab-hi { font-family: "Noto Sans Devanagari", "Nirmala UI", var(--font-body); }
   .panel { animation: rise 0.55s ease both; }
   .panel[hidden] { display: none; }
   @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
@@ -306,6 +312,7 @@
     <button class="tab" role="tab" aria-selected="false" id="t-love" data-p="love"><span class="dot"></span>Love &amp; Union</button>
     <button class="tab" role="tab" aria-selected="false" id="t-health" data-p="health"><span class="dot"></span>Health &amp; Vitality</button>
     <button class="tab" role="tab" aria-selected="false" id="t-wealth" data-p="wealth"><span class="dot"></span>Wealth / Artha</button>
+    <button class="tab tab-hi" role="tab" aria-selected="false" id="t-hindi" data-p="hindi"><span class="dot"></span>सरल हिंदी</button>
   </nav>
 
   <!-- ============ OVERVIEW ============ -->
@@ -595,6 +602,71 @@
       <p class="kicker">Upāya · for Artha</p>
       <div class="remedy"><div class="glyph">☉</div><div class="r-body"><div class="r-title">Sun for the 2nd house <small>daily, dawn</small></div><p class="mantra">Om Sūryāya Namaḥ · Sūrya Arghya at sunrise</p><p>Your Sun is the wealth-lord — feeding it at dawn strengthens income, status, and the confidence that draws opportunity.</p></div></div>
       <div class="remedy"><div class="glyph">卍</div><div class="r-body"><div class="r-title">Lakshmi &amp; discipline <small>Fridays</small></div><p class="mantra">Śrī Sūktam · Om Śrīm Mahālakṣmyai Namaḥ</p><p>Honour Lakshmi on Fridays, and impose the Saturn-discipline your chart lacks: a fixed savings rule you never break turns strong earning into lasting wealth.</p></div></div>
+    </div>
+  </section>
+
+  <!-- ============ SARAL HINDI ============ -->
+  <section class="panel hindi" id="p-hindi" role="tabpanel" aria-labelledby="t-hindi" hidden>
+    <div class="card gold">
+      <p class="kicker">आपकी कुंडली — आसान भाषा में</p>
+      <h2 class="section">आपका वर्तमान और भविष्य</h2>
+      <p class="lead">बिना कठिन शब्दों के, सीधी बात — अभी क्या चल रहा है, आगे क्या होगा, दिक्कत कहाँ है, और कैसे सब बेहतर होगा।</p>
+    </div>
+
+    <div class="card">
+      <p class="kicker">🌟 अभी का समय · 2024–2027</p>
+      <h3 class="sub">आपकी ज़िंदगी में दो चीज़ें एक साथ चल रही हैं</h3>
+      <p><strong class="hl">1. शुक्र (Venus) की महादशा शुरू हुई — 2024 से 20 साल के लिए।</strong> ये आपके लिए बहुत अच्छा समय है। शुक्र आपकी कुंडली में कमाई और तरक्की वाले घर में, अपने ही घर में बैठा है। मतलब — <strong class="hl">पैसा, नाम, अच्छे रिश्ते और करियर में बढ़त</strong> के दरवाज़े अगले 20 साल खुल रहे हैं।</p>
+      <p><strong class="hl">2. साथ में "साढ़ेसाती" चल रही है (2023–2030, सबसे भारी 2025–2027)।</strong> ये शनि का दौर है जो थोड़ा थका देता है — मन भारी, थकान, पुरानी चीज़ें छूटना, बड़े बदलाव।</p>
+      <div class="callout str"><span class="lbl">सीधा मतलब</span><p>अभी ऐसा है जैसे <strong>पुराना घर टूट रहा है और नया, बड़ा घर बन रहा है — दोनों एक साथ।</strong> थोड़ी तकलीफ है, पर आगे बहुत अच्छा है। घबराना नहीं है।</p></div>
+    </div>
+
+    <div class="card">
+      <p class="kicker">🔮 आगे का समय · भविष्य</p>
+      <h3 class="sub">आने वाले साल कैसे रहेंगे</h3>
+      <ul class="clean">
+        <li><strong class="hl">2024–2027:</strong> यही करियर बदलने या काम में बड़ी छलांग का सही समय है। हिम्मत से कदम उठाइए — नई नौकरी, नया काम, या अपना कुछ शुरू करना।</li>
+        <li><strong class="hl">2027 के बाद:</strong> साढ़ेसाती का भारी हिस्सा हट जाएगा। तब से चीज़ें हल्की और तेज़ होंगी — पैसा टिकने लगेगा, रिश्ते में स्थिरता, मन शांत।</li>
+        <li><strong class="hl">कुल मिलाकर:</strong> आपकी कुंडली कमाई और तरक्की के लिए बहुत मज़बूत है। पैसा आना कठिन नहीं — उसे <em class="term">संभालना और बचाना</em> सीखना है।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <p class="kicker">⚠️ दिक्कत कहाँ है · साफ़-साफ़</p>
+      <h3 class="sub">जहाँ ध्यान देना है</h3>
+      <div class="tbl-scroll">
+        <table class="grh">
+          <thead><tr><th>दिक्कत</th><th>असल में क्या होता है</th></tr></thead>
+          <tbody>
+            <tr><td class="pl">मन का ज़्यादा सोचना</td><td>दिमाग तेज़ है, पर हर बात पर ज़्यादा सोचते हैं → नींद, टेंशन, बेचैनी।</td></tr>
+            <tr><td class="pl">शनि कमज़ोर</td><td>शुरू में मेहनत ज़्यादा, पहचान देर से मिलती है। धैर्य रखना पड़ेगा।</td></tr>
+            <tr><td class="pl">पैसा बचाने में कमी</td><td>कमाई अच्छी, पर आराम और शौक में खर्च जल्दी हो जाता है। बचत का पक्का नियम नहीं।</td></tr>
+            <tr><td class="pl">रिश्तों में झिझक</td><td>प्यार में मन थोड़ा दूर-दूर रहता है या "कुछ कमी है" महसूस होता है। रिश्ता देर से, पर मज़बूत।</td></tr>
+            <tr><td class="pl">सेहत</td><td>पेट और मन जुड़े हैं — टेंशन होगी तो पेट और नींद खराब।</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card gold">
+      <p class="kicker">✅ कैसे बेहतर होगा · आसान उपाय</p>
+      <h3 class="sub">रोज़ करने वाली 4 छोटी चीज़ें</h3>
+      <p class="lead">यही सबसे ज़्यादा फ़र्क डालेंगी।</p>
+      <div class="remedy"><div class="glyph">卐</div><div class="r-body"><div class="r-title">हनुमान चालीसा रोज़ पढ़ें</div><p>साढ़ेसाती और कमज़ोर शनि — दोनों के लिए सबसे बढ़िया उपाय। मन को ताकत देगा।</p></div></div>
+      <div class="remedy"><div class="glyph">☉</div><div class="r-body"><div class="r-title">सुबह सूरज को जल चढ़ाएँ</div><p class="mantra">ॐ सूर्याय नमः</p><p>इससे सेहत भी अच्छी रहती है और पैसा-इज़्ज़त भी बढ़ती है।</p></div></div>
+      <div class="remedy"><div class="glyph">☾</div><div class="r-body"><div class="r-title">रोज़ 10 मिनट ध्यान / गहरी साँस</div><p>ज़्यादा सोचने की आदत और टेंशन यहीं से कम होगी। नींद ठीक होगी।</p></div></div>
+      <div class="remedy"><div class="glyph">₹</div><div class="r-body"><div class="r-title">बचत का पक्का नियम बनाएँ</div><p>कमाई का एक हिस्सा हर महीने अलग रखें, चाहे कुछ भी हो। यही आपकी सबसे बड़ी कमज़ोरी को ताकत बना देगा।</p></div></div>
+      <hr class="divider">
+      <p><strong class="hl">और दो बातें:</strong></p>
+      <ul class="clean">
+        <li><strong class="hl">सोमवार</strong> को शिव जी पर जल चढ़ाएँ / "ॐ नमः शिवाय" बोलें — मन शांत रहेगा। चाँदी में <strong class="hl">मोती</strong> पहनना भी अच्छा है।</li>
+        <li><strong class="hl">नीलम (Blue Sapphire) मत पहनना</strong> — आपकी कुंडली के लिए ठीक नहीं, नुकसान कर सकता है।</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3 class="sub" style="text-align:center;">एक लाइन में आपकी पूरी कहानी</h3>
+      <p style="text-align:center; font-family:var(--font-display); font-style:italic; font-size:1.16rem; color:var(--gold-bright); line-height:1.7;">अभी थोड़ा मुश्किल दौर है (2025–27), पर ये आपको तोड़ने नहीं, <strong class="hl">बड़ा बनाने</strong> आया है। धैर्य रखिए, मन शांत रखिए, पैसा बचाइए — 2027 के बाद आपका बहुत सुनहरा समय है। ✨</p>
     </div>
   </section>
 
